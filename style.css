@@ -1,0 +1,161 @@
+/* Genera style overall */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+}
+
+/* Heading */
+#header .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+.titre {
+  color: #d82c2c;
+  text-align: center;
+}
+
+/* Film reviews */
+.critiquesBlock {
+  display: flex;
+  flex-direction: row;
+}
+/* individual critique */
+.critique {
+  margin: 20px 20px;
+  flex: 1;
+  border-left: 15px solid #d82c2c;
+  min-width: 25vw;
+  background-color: rgb(240, 240, 240);
+}
+
+/* image block with in critique */
+.imageBlock1 {
+  background-image: url("./got.jpg");
+  width: 100%;
+  height: 37vh;
+  position: relative;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+.imageBlock2 {
+  background-image: url("./bella.jpg");
+  width: 100%;
+  height: 37vh;
+  position: relative;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+.imageBlock3 {
+  background-image: url("./bb.jpg");
+  width: 100%;
+  height: 37vh;
+  background-size: cover;
+  position: relative;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+.titreSerie {
+  color: white;
+  font-size: larger;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+}
+/*  */
+.groupeNote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px 10px 0 10px;
+}
+.note {
+  color: #d82c2c;
+}
+.auteur {
+  font-style: italic;
+}
+/*Fond de la nav rouge centre*/
+#navBar .navBar-item {
+  height: 80px;
+  background-color: rgba(253, 42, 42, 0.802);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/*Aligne les ecrits de la nav sur la droite*/
+#navBar .navBar-item .link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding-right: 50px;
+}
+/* Met en rouge au passage de la sourie*/
+#navBar .navBar-item .link:hover {
+  color: black;
+}
+
+img {
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 163px;
+}
+
+h1 {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+  
+  
+
+
+
+
+
+@media screen and (max-width: 1100px) and (min-width: 700px) {
+  body {
+    font-weight: bold;
+  }
+  .imageBlock1 {
+    background-image: url("elements/gotXS.jpg") !important;
+    height: 30vh !important;
+  }
+  .imageBlock2 {
+    background-image: url("elements/bellaXS.jpg") !important;
+    height: 30vh !important;
+  }
+  .imageBlock3 {
+    background-image: url("elements/bbXS.jpg") !important;
+    height: 30vh !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .critiquesBlock {
+    flex-direction: column !important;
+  }
+}
