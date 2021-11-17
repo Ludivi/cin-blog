@@ -1,0 +1,21 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+}
+.imageBlock1 {
+  background-image: url("elements/gotXS.jpg");
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+.imageBlock2 {
+  background-image: url("elements/bellaXS.jpg");
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+.imageBlock3 {
+  background-image: url("elements/bbXS.jpg");
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
